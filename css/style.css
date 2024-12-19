@@ -1,3 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    
+    max-width: 1920px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 100%;
+}
+
+.pelogo img {
+    width: 215px;
+    margin-left: 300px;
+}
+
+.logotext {
+    max-width: 198px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.trashclass {
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    padding-left: 537px;
+    gap: 25px;
+}
+
+.navigation {
+    background-color: #0E2149;
+    padding-left: 300px;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-brand,
+.nav-link {
+    color: white;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapse {
+    display: flex;
+}
+
+.d-flex {
+    max-width: 348px;
+    justify-content: space-between;
+}
+
+.product-section {
+    background-image: url(../images/generalfood.svg);
+    height: 540px;
+    color: white;
+    padding-left: 363px;
+
+}
+
+.product-section h1 {
+    font-family: Abhaya Libre;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 61.34px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding-top: 113px;
+}
+
+.product-section p {
+    font-family: Times New Roman;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 23.4px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding-top: 32px;
+    padding-bottom: 17px;
+    max-width: 352px;
+}
+
+.button {
+    background-color: #0E2149;
+    color: white;
+    width: 164px;
+    height: 46px;
+    margin-top: 17px;
+    font-family: Times New Roman;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: center;
+
+
+}
+
+.category-item1,
+.category-item2,
+.category-item3 {
+    display: flex;
+    margin-left: 360px;
+    margin-right: 360px;
+    margin-top: 63px;
+    /*color: white;*/
+
+}
+
+.category-item1 {}
+
+.line1 {
+    width: 387px;
+    height: 260px;
+    background: radial-gradient(97.05% 95.85% at 94.3% 92.41%, #F7C669 0%, #C5624C 100%), url(/images/sausagelogo.svg); 
+    padding-top: 88px;
+    padding-left: 28px;
+
+
+}
+
+.line1 h3 {
+    max-width: 197px;
+    font-family: Abhaya Libre;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30.67px;
+    text-align: left;
+}
+
+.line1 img {
+    position: absolute;
+    z-index: 1;
+    width: 237px;
+    height: auto;
+
 }
