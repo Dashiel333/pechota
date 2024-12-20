@@ -47,7 +47,12 @@ body {
     justify-content: center;
 }
 
-
+.products {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    max-width: 190px;
+}
 .pelogo img {
     width: 215px;
 
@@ -72,8 +77,6 @@ body {
 .trashclass {
     display: flex;
     justify-content: space-between;
-    text-align: right;
-    gap: 25px;
 }
 
 .navigation {
