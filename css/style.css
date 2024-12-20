@@ -5,7 +5,6 @@
 }
 
 body {
-    max-width: 1920px;
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
@@ -21,7 +20,6 @@ body {
 
 .pelogo img {
     width: 215px;
-    margin-left: 300px;
 }
 
 .logotext {
@@ -36,13 +34,11 @@ body {
     display: flex;
     justify-content: space-between;
     text-align: right;
-    padding-left: 537px;
     gap: 25px;
 }
 
 .navigation {
     background-color: #0E2149;
-    padding-left: 300px;
 }
 
 .navbar-nav {
@@ -50,6 +46,11 @@ body {
     display: flex;
     justify-content: center;
     padding-left: 0;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
 }
 
 .nav-item {
@@ -67,9 +68,11 @@ body {
     color: white;
 }
 
-.container-fluid {
+.container {
     display: flex;
     justify-content: space-between;
+    
+
 }
 
 .collapse {
@@ -83,13 +86,13 @@ body {
 
 .product-section {
     background-image: url(../images/generalfood.svg);
-    height: 540px;
+    min-height: 540px;
     color: white;
     padding-left: 363px;
 
 }
 
-.product-section h1 {
+.product-section-heading {
     font-family: Abhaya Libre;
     font-size: 52px;
     font-weight: 700;
@@ -100,7 +103,7 @@ body {
     padding-top: 113px;
 }
 
-.product-section p {
+.product-section-text {
     font-family: Times New Roman;
     font-size: 18px;
     font-style: italic;
@@ -144,12 +147,9 @@ body {
 
 .line1 {
     width: 387px;
-    height: 260px;
     background: radial-gradient(97.05% 95.85% at 94.3% 92.41%, #F7C669 0%, #C5624C 100%), url(/images/sausagelogo.svg); 
     padding-top: 88px;
     padding-left: 28px;
-
-
 }
 
 .line1 h3 {
