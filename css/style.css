@@ -22,7 +22,7 @@ body {
     align-items: center;
     padding: 10px 20px;
     width: 100%;
-
+    
 }
 
 .logotext {
@@ -30,14 +30,46 @@ body {
     margin-top: 0;
     margin-bottom: 0;
 }
+
+.pelogo {
+    display: flex;
+    justify-content: space-between;
+    max-width: 443px;
+    align-items: center;
+
+}
+
+
+.logotext {
+    max-width: 180px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.trashclass {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    gap: 15px;
+}
+
+.starlogo {
+    position: relative;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    max-width: 23px;
+}
 .numb {
     margin-right: 5px;
     font-size: 14px;
     position: absolute;
-    top: 20px;
-    right: 374px;
-    background-color: #e5a21a; /* Цвет круга */
-    color: white; /* Цвет числа */
+    top: -7px;
+    right: -21px;
+    background-color: #e5a21a; 
+    color: white; 
     font-size: 14px;
     font-weight: bold;
     width: 20px;
@@ -49,35 +81,42 @@ body {
 
 .products {
     display: flex;
-    justify-content: space-between;
-    padding-left: 20px;
-    max-width: 190px;
-}
-.pelogo img {
-    width: 215px;
-
-}
-
-.pelogo {
-    display: flex;
-    justify-content: space-between;
-    max-width: 443px;
     align-items: center;
-
+    
 }
-
-.logotext {
-    max-width: 198px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 15px;
-    text-align: left;
-    margin-left: 15px;
-}
-
-.trashclass {
+.trprice {
+    width: 132px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    gap: 13px;
+
 }
+
+.text-block{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.products img {
+    width: 25px;
+    height: auto;
+}
+
+.products p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+
 
 .navigation {
     background-color: #0E2149;
@@ -110,20 +149,23 @@ body {
     color: white;
 }
 
-.container {
+.navigation .container  {
     display: flex;
     justify-content: space-between;
-    
+    max-width: 1290px;
+    margin: 0 auto;
 
 }
 
 .collapse {
     display: flex;
+
 }
 
 .d-flex {
     max-width: 348px;
     justify-content: space-between;
+    background-color: #0E2149;
 }
 
 .product-section {
@@ -170,8 +212,14 @@ body {
     font-weight: 400;
     line-height: 23px;
     text-align: center;
+}
 
-
+.searchblock{
+    display: flex;
+    background-color: #253B6A;
+    position: relative;
+    color: white;
+    
 }
 
 .category-item1,
