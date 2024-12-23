@@ -169,12 +169,18 @@ body {
 }
 
 .product-section {
-    background-image: url(../images/generalfood.svg);
+    background-image: url(../images/generalfood.png);
     min-height: 540px;
-    color: white;
+    color: rgb(57, 56, 77);
     padding-left: 363px;
 
 }
+.carousel{
+    max-width: 100%;
+    height: 540px; /* Я помню, что высоту не указывают))) */
+}
+
+
 
 .product-section-heading {
     font-family: Abhaya Libre;
