@@ -11,17 +11,15 @@ body {
     padding: 0;
 }
 
-.linebar {
-    max-width: 1290px;
-    margin: 0 auto;
-    padding: 0;
+.wraper .container {
+    max-width: 1224px;
 }
 
 .firstline {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 0;
     width: 100%;
     
 }
@@ -65,9 +63,8 @@ body {
 }
 .numb {
     margin-right: 5px;
-    font-size: 14px;
     position: absolute;
-    top: -7px;
+    top: 0;
     right: -21px;
     background-color: #e5a21a; 
     color: white; 
@@ -138,8 +135,8 @@ body {
     font-weight: bold;
 }
 
-.nav-item {
-    margin: 0 15px;
+.nav-item + .nav-item {
+    margin-left: 15px;
 }
 
 .nav-link {
@@ -156,20 +153,11 @@ body {
 .navigation .container  {
     display: flex;
     justify-content: space-between;
-    max-width: 1290px;
-    margin: 0 auto;
-
 }
 
 .collapse {
     display: flex;
 
-}
-
-.d-flex {
-    max-width: 348px;
-    justify-content: space-between;
-    background-color: #0E2149;
 }
 
 .searchblock{
@@ -181,22 +169,30 @@ body {
 }
 
 .product-section {
+    position: relative;
     background-image: url(../images/generalfood.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 540px;
     color: rgb(57, 56, 77);
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    z-index: 1;
+}
 
+
+.product-section:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90.36deg, rgba(11, 14, 28, 0.85) 18.46%, rgba(13, 24, 40, 0) 58.9%);
 }
 
 .carousel{
     max-width: 100%;
-    height: 540px; /* Я помню, что высоту не указывают))) */
+    padding-bottom: 130px;
+}
+
+.carousel-indicators {
+    bottom: 30px;
 }
 
 
@@ -225,13 +221,16 @@ body {
     max-width: 352px;
 }
 
+.carousel-control-prev {
+    left: -100px;
+}
+
+.carousel-control-next {
+    right: -100px;
+}
 .carousel-control-prev,
 .carousel-control-next {
-    z-index: 1;
     width: 50px;
-    height: 50px;
-    left: 10px;
-    right: 10px;
 }
 
 
@@ -261,32 +260,11 @@ body {
 }
 
 
-.category-item1,
-.category-item2,
-.category-item3 {
-    display: flex;
-    margin-left: 360px;
-    margin-right: 360px;
-    margin-top: 63px;
-    /*color: white;*/
+.sausage {
+    background-image: url(../images/sausagelogo.png), radial-gradient(97.05% 95.85% at 94.3% 92.41%, #F7C669 0%, #C5624C 100%); 
+    background-repeat: no-repeat;
 }
 
-.category-item1 {
-    position: absolute;
-    width: 237px;
-    top: 36px;
-}
-
-
-.line1-sosaage {
-    position: relative;
-    width: 387px;
-    background: radial-gradient(97.05% 95.85% at 94.3% 92.41%, #F7C669 0%, #C5624C 100%), url(/images/sausagelogo.svg); 
-    padding-top: 88px;
-    padding-left: 28px;
-    z-index: 0;
-
-}
 .line1-sosaage img {
     position: absolute;
     width: 237px;
