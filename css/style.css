@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Times New Roman', Times, serif;
+    font-family: Abhaya Libre;
     margin: 0;
     padding: 0;
 }
@@ -115,7 +116,10 @@ body {
     color: #333;
 }
 
+.carousel-text {
+    color: white;
 
+}
 
 
 .navigation {
@@ -168,18 +172,32 @@ body {
     background-color: #0E2149;
 }
 
+.searchblock{
+    display: flex;
+    background-color: #253B6A;
+    position: relative;
+    color: white;
+    
+}
+
 .product-section {
     background-image: url(../images/generalfood.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     min-height: 540px;
     color: rgb(57, 56, 77);
-    padding-left: 363px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    z-index: 1;
 
 }
+
 .carousel{
     max-width: 100%;
     height: 540px; /* Я помню, что высоту не указывают))) */
 }
-
 
 
 .product-section-heading {
@@ -190,7 +208,7 @@ body {
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    padding-top: 113px;
+    
 }
 
 .product-section-text {
@@ -207,7 +225,17 @@ body {
     max-width: 352px;
 }
 
-.button {
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    left: 10px;
+    right: 10px;
+}
+
+
+.butt {
     background-color: #0E2149;
     color: white;
     width: 164px;
@@ -220,13 +248,18 @@ body {
     text-align: center;
 }
 
-.searchblock{
-    display: flex;
-    background-color: #253B6A;
-    position: relative;
-    color: white;
+.car-text1{
+    padding-top: 113px;
     
 }
+
+.car-text2{
+    font-size: 18px;
+    width: 352px;
+    padding-top: 32px;
+
+}
+
 
 .category-item1,
 .category-item2,
@@ -236,10 +269,32 @@ body {
     margin-right: 360px;
     margin-top: 63px;
     /*color: white;*/
+}
+
+.category-item1 {
+    position: absolute;
+    width: 237px;
+    top: 36px;
+}
+
+
+.line1-sosaage {
+    position: relative;
+    width: 387px;
+    background: radial-gradient(97.05% 95.85% at 94.3% 92.41%, #F7C669 0%, #C5624C 100%), url(/images/sausagelogo.svg); 
+    padding-top: 88px;
+    padding-left: 28px;
+    z-index: 0;
+
+}
+.line1-sosaage img {
+    position: absolute;
+    width: 237px;
+    height: auto;
+    z-index: 1;
 
 }
 
-.category-item1 {}
 
 .line1 {
     width: 387px;
@@ -257,10 +312,3 @@ body {
     text-align: left;
 }
 
-.line1 img {
-    position: absolute;
-    z-index: 1;
-    width: 237px;
-    height: auto;
-
-}
