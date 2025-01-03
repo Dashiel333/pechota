@@ -453,13 +453,18 @@ body {
     
 }
 
+.responsive {
+    display: flex;
+    gap: 20px;
+}
+
 .cardhome{
     border: 1px solid #e0e0e0;
     margin-top: 47px;
 }
     
 .incard{
-    padding-left: 20px;
+    padding: 20px;
     padding-bottom: 20px;
       
 }
@@ -471,9 +476,7 @@ body {
 }
 
 
-.foodblock{
-    width: 263px;
-}
+
 .foodtext{
     padding-top: 18px;
     font-weight: bold;
