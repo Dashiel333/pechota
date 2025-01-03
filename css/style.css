@@ -21,7 +21,7 @@ body {
     align-items: center;
     padding: 10px 0;
     width: 100%;
-    
+
 }
 
 .logotext {
@@ -56,18 +56,19 @@ body {
 
 .starlogo {
     position: relative;
-    display: flex; 
+    display: flex;
     align-items: center;
     justify-content: center;
     max-width: 23px;
 }
+
 .numb {
     margin-right: 5px;
     position: absolute;
     top: 0;
     right: -21px;
-    background-color: #e5a21a; 
-    color: white; 
+    background-color: #e5a21a;
+    color: white;
     font-size: 14px;
     font-weight: bold;
     width: 20px;
@@ -80,8 +81,9 @@ body {
 .products {
     display: flex;
     align-items: center;
-    
+
 }
+
 .trprice {
     width: 132px;
     display: flex;
@@ -90,7 +92,7 @@ body {
 
 }
 
-.text-block{
+.text-block {
     display: flex;
     flex-direction: column;
 }
@@ -131,41 +133,46 @@ body {
 }
 
 .navbar-nav .nav-link {
-    color: white !important;
+    color: white;
     font-weight: bold;
 }
 
-.nav-item + .nav-item {
+.navigation .nav-link.active {
+    color: white;
+    background-color: #D5AF86;
+
+}
+
+
+.nav-item+.nav-item {
     margin-left: 15px;
 }
 
-.nav-link {
+.navigation .nav-link {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-.navbar-brand,
-.nav-link {
-    color: white;
-}
 
-.navigation .container  {
+.navigation .container {
     display: flex;
     justify-content: space-between;
 }
+
+
 
 .collapse {
     display: flex;
 
 }
 
-.searchblock{
+.searchblock {
     display: flex;
     background-color: #253B6A;
     position: relative;
     color: white;
-    
+
 }
 
 .form-control {
@@ -190,7 +197,7 @@ body {
     background: linear-gradient(90.36deg, rgba(11, 14, 28, 0.85) 18.46%, rgba(13, 24, 40, 0) 58.9%);
 }
 
-.carousel{
+.carousel {
     max-width: 100%;
     padding-bottom: 130px;
 }
@@ -208,7 +215,7 @@ body {
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    
+
 }
 
 .product-section-text {
@@ -232,33 +239,34 @@ body {
 .carousel-control-next {
     right: -100px;
 }
+
 .carousel-control-prev,
 .carousel-control-next {
     width: 50px;
 }
 
 .form-control {
-        
+
     border: none;
-    padding: 0 10px; 
-    height: 40px; 
+    padding: 0 10px;
+    height: 40px;
     color: #fff;
     font-size: 16px;
-    background-color: transparent; 
+    background-color: transparent;
     outline: none;
     border-radius: 0px;
-        
+
 }
 
 .searchblock button {
-    width: 40px; 
+    width: 40px;
     height: 40px;
-    background-color: transparent; 
-    border: none; 
-    background-image: url('../images/glasslogo.svg'); 
+    background-color: transparent;
+    border: none;
+    background-image: url('../images/glasslogo.svg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 60%; 
+    background-size: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -266,14 +274,16 @@ body {
 
 /*Чтобы не менялся цвет нажатии на поиск и шрифт был белый*/
 .form-control:focus {
-    background-color: transparent; /* Оставить фон неизменным */
+    background-color: transparent;
     color: #fff;
-    outline: none; /* Убираем обводку */
-    box-shadow: none; /* Убираем дополнительный эффект */
+    outline: none;
+    box-shadow: none;
 }
+
 .form-control::placeholder {
-    color: #fff; /* Цвет текста-заполнителя */
-    opacity: 0.7; /* Прозрачность (опционально) */
+    color: #fff;
+    opacity: 0.7;
+    /* Прозрачность*/
 }
 
 .butt {
@@ -289,12 +299,12 @@ body {
     text-align: center;
 }
 
-.car-text1{
+.car-text1 {
     padding-top: 113px;
-    
+
 }
 
-.car-text2{
+.car-text2 {
     font-size: 18px;
     width: 352px;
     padding-top: 32px;
@@ -302,53 +312,226 @@ body {
 }
 
 
-.sausage {
-    background-image: url(../images/sausagelogo.png), radial-gradient(97.05% 95.85% at 94.3% 92.41%, #F7C669 0%, #C5624C 100%); 
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
-
-}
 .promote-product-content {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     margin: 30px 0;
 
+
 }
 
 .category-item {
     flex: 1 1 100%;
-    max-width: calc(33.3333% - 20%);
+    max-width: calc(33.3333% - 20px);
     background-color: #C5624C;
     height: 260px;
-
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+
 
 .category-item-big {
-    max-width: calc(50% - 20%);
+    max-width: calc(50% - 20px);
     height: 260px;
 
-
 }
 
 
+.sausage {
+    background-image: url(../images/sausagelogo.png), radial-gradient(97.05% 95.85% at 94.3% 92.41%, #F7C669 0%, #C5624C 100%);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    width: 237px;
+}
 
-
-/*
-.line1 {
-    width: 387px;
-    background: radial-gradient(97.05% 95.85% at 94.3% 92.41%, #F7C669 0%, #C5624C 100%), url(/images/sausagelogo.svg); 
-    padding-top: 88px;
+.line1-sosaage {
+    width: 197px;
+    padding-top: 50px;
     padding-left: 28px;
+
 }
 
-.line1 h3 {
-    max-width: 197px;
-    font-family: Abhaya Libre;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 30.67px;
-    text-align: left;
+.cheese {
+
+    background-image: url(../images/cheese.png), url(../images/glasscheese.png), linear-gradient(to right, rgb(169, 154, 65), rgb(223, 229, 106));
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
 }
-*/
+
+.line2 {
+    width: 197px;
+    padding-top: 58px;
+    padding-left: 27px;
+
+}
+
+.salmon {
+    background-image: url(../images/salmon.png), linear-gradient(to right, rgb(89, 140, 90), rgb(117, 204, 127));
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+
+}
+
+.line3 {
+    width: 197px;
+    padding-top: 58px;
+    padding-left: 27px
+}
+
+.beer {
+    background-image: url(../images/beer.png), linear-gradient(to right, rgb(230, 145, 18), rgb(223, 209, 80));
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
+
+.line4 {
+    padding-top: 58px;
+    padding-left: 27px
+}
+
+.beries {
+    background-image: url(../images/Beries.png), linear-gradient(to right, rgb(11, 103, 76), rgb(80, 223, 185));
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
+
+.line5 {
+    width: 213px;
+    padding-top: 58px;
+    padding-left: 27px
+}
+
+.honey {
+    background-image: url(../images/honeylogo.png), url(../images/bariesblurelogo.png), linear-gradient(to right, rgb(58, 65, 107), rgb(133, 124, 177));
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
+.line6{
+    width: 225px;
+    padding-top: 58px;
+    padding-left: 27px;
+    font-size: 15px;
+}
+
+.vegetables{
+    background-image: url(../images/vegetableslogo.png), linear-gradient(to right, rgb(94, 60, 100), rgb(199, 133, 217));
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: 100% 35%;
+}
+.line7{
+    width: 225px;
+    padding-top: 58px;
+    padding-left: 27px;
+}
+.fruits{
+    background-image: url(../images/fruits.png), linear-gradient(to right, rgb(211, 117, 34), rgb(237, 183, 122));
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: 100% 35%;
+}
+
+.line8{
+    
+    padding-top: 58px;
+    padding-left: 27px
+}
+
+
+.popular-product .nav-tabs {
+    justify-content: center;
+
+}
+.tab-pane{
+    width: 285px;
+    
+}
+
+.cardhome{
+    border: 1px solid #e0e0e0;
+    margin-top: 47px;
+}
+    
+.incard{
+    padding-left: 20px;
+    padding-bottom: 20px;
+      
+}
+.discountstar{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7px;
+    padding-right: 6px;
+}
+
+
+.foodblock{
+    width: 263px;
+}
+.foodtext{
+    padding-top: 18px;
+    font-weight: bold;
+    width: 250px;
+}
+.foodtext2{
+    width: 245px;
+    padding-top: 5px;
+
+}
+.textprice{
+    width: 60px;
+    font-weight: bold;
+}
+.text2{
+    color: #D5AF86;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+.textprice2{
+    display: flex;
+    justify-content: space-between;
+   
+
+}
+.discount{
+    margin-left: 27px;
+    padding-top: -5px;
+    background-color: #EB7D3F;
+    color: white;
+    padding: 0px 5px;
+    font-weight: bold;
+    height: 24px;
+
+}
+.economy{
+    font-size: 13px;
+    border: 1px solid #EFF2F4;
+    height: 24px;
+    padding-left: 6px;
+}
+.buybutton{
+    display: flex;
+}
+
+.bt1{
+    background-color: #0E2149;
+    color: white;
+    border: none;
+    width: 118px;
+    height: 46px;
+}
+.bt2{
+    background-color: #D5AF86;
+    color: white;
+    margin-left: 9px;
+    border: none;
+    width: 118px;
+    height: 46px;
+}
 
