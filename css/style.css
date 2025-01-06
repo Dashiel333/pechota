@@ -461,6 +461,7 @@ body {
 .cardhome{
     border: 1px solid #e0e0e0;
     margin-top: 47px;
+    width: 285px; /*Ширина для блоков*/
 }
     
 .incard{
@@ -480,15 +481,15 @@ body {
 .foodtext{
     padding-top: 18px;
     font-weight: bold;
-    width: 250px;
+    
 }
 .foodtext2{
-    width: 245px;
+    
     padding-top: 5px;
 
 }
 .textprice{
-    width: 60px;
+    
     font-weight: bold;
 }
 .text2{
@@ -527,7 +528,7 @@ body {
     color: white;
     border: none;
     width: 118px;
-    height: 46px;
+    height: 46px; /*Так как это кнопки, то, для них указала высоту и ширину*/
 }
 .bt2{
     background-color: #D5AF86;
@@ -538,3 +539,34 @@ body {
     height: 46px;
 }
 
+.bluecolor{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: radial-gradient(15.94% 134.15% at 43.26% 111.07%, #3D568A 0%, #0E2149 100%);
+    flex-direction: column;
+    align-items: center;
+
+}
+.bluetext{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 63px;
+    max-width: 315px;
+
+}
+.p-logo{
+    width: 182px;
+
+}
+.bluetext1{
+
+}
+.ptext{
+    max-width: 270px;
+    display: flex;
+    flex-direction: column;
+
+
+}
