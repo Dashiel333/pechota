@@ -450,6 +450,7 @@ body {
 }
 .tab-pane{
     width: 285px;
+    flex-wrap: nowrap;
     
 }
 
@@ -461,7 +462,12 @@ body {
 .cardhome{
     border: 1px solid #e0e0e0;
     margin-top: 47px;
-    width: 285px; /*Ширина для блоков*/
+    /*max-width: 100%; Ширина для блоков*/
+    flex: 1 1 calc(33.333%- 20px);
+    box-sizing: border-box;
+    min-width: 250px;
+    max-width: 400px;
+
 }
     
 .incard{
@@ -472,8 +478,8 @@ body {
 .discountstar{
     display: flex;
     justify-content: space-between;
-    padding-top: 7px;
-    padding-right: 6px;
+    align-items: center;
+    padding-bottom: 10px;
 }
 
 
