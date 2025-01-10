@@ -412,33 +412,36 @@ body {
     background-repeat: no-repeat;
     background-position: 100% 100%;
 }
-.line6{
+
+.line6 {
     width: 225px;
     padding-top: 58px;
     padding-left: 27px;
     font-size: 15px;
 }
 
-.vegetables{
+.vegetables {
     background-image: url(../images/vegetableslogo.png), linear-gradient(to right, rgb(94, 60, 100), rgb(199, 133, 217));
     background-repeat: no-repeat;
     background-repeat: no-repeat;
     background-position: 100% 35%;
 }
-.line7{
+
+.line7 {
     width: 225px;
     padding-top: 58px;
     padding-left: 27px;
 }
-.fruits{
+
+.fruits {
     background-image: url(../images/fruits.png), linear-gradient(to right, rgb(211, 117, 34), rgb(237, 183, 122));
     background-repeat: no-repeat;
     background-repeat: no-repeat;
     background-position: 100% 35%;
 }
 
-.line8{
-    
+.line8 {
+
     padding-top: 58px;
     padding-left: 27px
 }
@@ -448,18 +451,11 @@ body {
     justify-content: center;
 
 }
-.tab-pane{
-    width: 285px;
-    flex-wrap: nowrap;
-    
-}
 
-.responsive {
-    display: flex;
-    gap: 20px;
-}
 
-.cardhome{
+
+
+.cardhome {
     border: 1px solid #e0e0e0;
     margin-top: 47px;
     /*max-width: 100%; Ширина для блоков*/
@@ -467,15 +463,17 @@ body {
     box-sizing: border-box;
     min-width: 250px;
     max-width: 400px;
+    width: 100%;
 
 }
-    
-.incard{
+
+.incard {
     padding: 20px;
     padding-bottom: 20px;
-      
+
 }
-.discountstar{
+
+.discountstar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -484,32 +482,37 @@ body {
 
 
 
-.foodtext{
+.foodtext {
     padding-top: 18px;
     font-weight: bold;
-    
+
 }
-.foodtext2{
-    
+
+.foodtext2 {
+
     padding-top: 5px;
 
 }
-.textprice{
-    
+
+.textprice {
+
     font-weight: bold;
 }
-.text2{
+
+.text2 {
     color: #D5AF86;
     font-weight: bold;
     text-decoration: line-through;
 }
-.textprice2{
+
+.textprice2 {
     display: flex;
     justify-content: space-between;
-   
+
 
 }
-.discount{
+
+.discount {
     margin-left: 27px;
     padding-top: -5px;
     background-color: #EB7D3F;
@@ -519,24 +522,28 @@ body {
     height: 24px;
 
 }
-.economy{
+
+.economy {
     font-size: 13px;
     border: 1px solid #EFF2F4;
     height: 24px;
     padding-left: 6px;
 }
-.buybutton{
+
+.buybutton {
     display: flex;
 }
 
-.bt1{
+.bt1 {
     background-color: #0E2149;
     color: white;
     border: none;
     width: 118px;
-    height: 46px; /*Так как это кнопки, то, для них указала высоту и ширину*/
+    height: 46px;
+    /*Так как это кнопки, то, для них указала высоту и ширину*/
 }
-.bt2{
+
+.bt2 {
     background-color: #D5AF86;
     color: white;
     margin-left: 9px;
@@ -545,16 +552,21 @@ body {
     height: 46px;
 }
 
-.bluecolor{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+.question-block {
     background: radial-gradient(15.94% 134.15% at 43.26% 111.07%, #3D568A 0%, #0E2149 100%);
-    flex-direction: column;
-    align-items: center;
-
+    padding-top: 40px;
+    padding-bottom: 30px;
 }
-.bluetext{
+
+.question-containt {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    
+}
+
+.bluetext {
     color: white;
     display: flex;
     flex-direction: column;
@@ -562,17 +574,33 @@ body {
     max-width: 315px;
 
 }
-.p-logo{
+
+.p-logo {
     width: 182px;
 
 }
-.bluetext1{
 
-}
-.ptext{
+.bluetext1 {}
+
+.ptext {
     max-width: 270px;
     display: flex;
     flex-direction: column;
 
-
 }
+
+.blue-containt {
+    display: flex;
+}
+
+input {
+    width: 100%;
+} 
+
+.input-class {
+    width: 50%;
+}
+
+.text-aria {
+    width: 50%;
+} 
