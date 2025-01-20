@@ -719,7 +719,12 @@ input[type="checkbox"] {
 .text-container p{
     margin: 0;
 }
-.nav-container{
+
+.two-containers{
+    display: flex;
+    
+}
+.nav-container1{
     max-width: 285px;
     display: flex;
     justify-content: flex-start;
@@ -736,11 +741,59 @@ input[type="checkbox"] {
     font-family: Arial, Helvetica, sans-serif;
     color: #0E2149;
     line-height: 35px;
-    border-bottom: 1px solid #000;
+    display: flex;
+    flex-direction: column;
     
 }
 .bold-text{
     font-weight: bold;
     color: #D5AF86;
     
+}
+.nav-icons{
+    max-width: 16px;
+}
+
+.navcont-right{
+    max-width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 16px;
+    
+}
+.no-text{
+    list-style: none; 
+}
+
+.navtext-right{
+    display: flex;
+    gap: 30px;
+    font-size: 15px;
+    padding-left: 0;
+
+}
+.h-text{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.style-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-left: 0;
+    
+}
+.style-list li {
+    padding: 10px 20px;
+    border: 1px solid #D5AF86; 
+    border-radius: 20px; 
+    background-color: #ffffff; 
+    color: #1a1a1a; 
+    font-family: Arial, sans-serif; 
+    font-size: 14px; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
 }
