@@ -850,3 +850,10 @@ input[type="checkbox"] {
     border: none;
     gap: 20px;
 }
+
+.alert {
+    position: fixed;
+    margin: 15px;
+    right: 0;
+    z-index: 10;
+}

@@ -36,3 +36,20 @@ $(document).ready(function () {
     });
 });
 
+const productCard = document.getElementsByClassName('cardhome')
+const priceInCart = document.getElementById('price')
+
+Array.from(productCard).forEach(card => {
+    card.addEventListener('click', function () {
+        const price = +this.querySelector('.textprice').innerHTML.split('UAH')[0]
+        priceInCart.innerHTML = +priceInCart.innerHTML + price
+
+        console.log('Show');
+        
+        setInterval(function () {
+            console.log('Close!!!!');
+        }, 3000)
+    })
+});
+
+
