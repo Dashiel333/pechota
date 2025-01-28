@@ -470,7 +470,6 @@ body {
 .incard {
     padding: 20px;
     padding-bottom: 20px;
-
 }
 
 .discountstar {
@@ -478,8 +477,14 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 10px;
+    position: relative;
 }
-
+.greystar {
+    position: absolute;
+    position: absolute;
+    top: 11px; 
+    right: 12px; 
+}
 
 
 .foodtext {
@@ -495,8 +500,8 @@ body {
 }
 
 .textprice {
-
     font-weight: bold;
+    margin: 0;
 }
 
 .text2 {
@@ -508,26 +513,26 @@ body {
 .textprice2 {
     display: flex;
     justify-content: space-between;
-
-
 }
 
+.text3{
+    padding-left: 27px;
+    max-width: 245px;
+}
 .discount {
     margin-left: 27px;
-    padding-top: -5px;
+    margin-top: -2px;
     background-color: #EB7D3F;
     color: white;
     padding: 0px 5px;
     font-weight: bold;
-    height: 24px;
-
+    
 }
 
 .economy {
     font-size: 13px;
     border: 1px solid #EFF2F4;
     height: 24px;
-    padding-left: 6px;
 }
 
 .buybutton {
@@ -567,7 +572,6 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
-    padding-top: 63px;
     max-width: 315px;
 
 }
@@ -582,11 +586,17 @@ body {
     max-width: 270px;
     display: flex;
     flex-direction: column;
-
+    font-size: 18px;
 }
+
+.ptext1 {
+    font-size: 42px;
+}
+
 
 .blue-containt {
     display: flex;
+    gap: 11px;
 }
 
 input {
@@ -595,7 +605,12 @@ input {
 
 .input-class {
     width: 50%;
+
 }
+.email {
+    margin-top: 10px;
+}
+
 
 .text-aria {
     width: 50%;
@@ -720,8 +735,11 @@ input[type="checkbox"] {
     margin: 0;
 }
 
+
+/* body */
 .two-containers{
     display: flex;
+    align-items: flex-start;
     
 }
 .nav-container1{
@@ -766,6 +784,20 @@ input[type="checkbox"] {
     list-style: none; 
 }
 
+.grey-nav{
+    max-width: 285px;
+    background-color: #EFF2F4;
+    
+    
+
+}
+.greynav-p {
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 24px;
+    padding-left: 15px;
+}
+
 .navtext-right{
     display: flex;
     gap: 30px;
@@ -783,7 +815,7 @@ input[type="checkbox"] {
     list-style: none;
     gap: 10px;
     flex-wrap: wrap;
-    padding-left: 0;
+    padding: 0;
     
 }
 .style-list li {
@@ -796,4 +828,25 @@ input[type="checkbox"] {
     font-size: 14px; 
     cursor: pointer; 
     transition: all 0.3s ease; 
+}
+
+.btn-secondary{
+    background-color: white;
+    color: #0E2149;
+    border-radius: 0%;
+    border: 1px solid #B8C1CA;
+    font-size: 13px;
+
+}
+.btn-secondary:hover {
+    background-color: inherit; /* Сохранить фон как у обычного состояния */
+    color: inherit; /* Сохранить цвет текста */
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    border: none;
+    gap: 20px;
 }
