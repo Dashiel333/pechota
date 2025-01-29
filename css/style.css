@@ -857,3 +857,28 @@ input[type="checkbox"] {
     right: 0;
     z-index: 10;
 }
+
+
+.show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.btn-show{
+    max-width: 195px;
+    border: none;
+    font-size: 22px;
+}
+
+
+.cardhome:not(:nth-child(-n+3)) {
+    display: none;
+}
+
+
+@media (max-width:990px) {
+    .cardhome:not(:nth-child(-n+3)) {
+        display: none;
+}
+}

@@ -53,3 +53,12 @@ Array.from(productCard).forEach(card => {
 });
 
 
+const btnShow = document.querySelector('.btn-show'); 
+const cards = document.querySelectorAll('.cardhome'); 
+
+btnShow.addEventListener('click', function() {
+    cards.forEach(card => { 
+        card.style.display = 'flex';
+    });
+    btnShow.style.display = 'none'; 
+});
