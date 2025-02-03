@@ -58,7 +58,6 @@ const cards = document.querySelectorAll('.cardhome');
 
 btnShow.addEventListener('click', function() {
     cards.forEach(card => { 
-        card.style.display = 'flex';
     });
     btnShow.style.display = 'none'; 
-});
+}); 
