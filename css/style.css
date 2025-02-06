@@ -467,6 +467,17 @@ body {
 
 }
 
+.cardhome1 {
+    border: 1px solid #e0e0e0;
+    /*max-width: 100%; Ширина для блоков*/
+    flex: 1 1 calc(33.333%- 20px);
+    box-sizing: border-box;
+    min-width: 250px;
+    max-width: 400px;
+    width: 100%;
+
+}
+
 .incard {
     padding: 20px;
     padding-bottom: 20px;
@@ -743,12 +754,16 @@ input[type="checkbox"] {
     
 }
 .nav-container1{
-    max-width: 285px;
+    min-width: 285px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     padding-top: 50px;
     
+}
+
+.bothcontainer{
+    display: flex;
 }
 
 
@@ -771,7 +786,25 @@ input[type="checkbox"] {
 }
 .nav-icons{
     max-width: 16px;
+    display: inline-block;
+    width: 16px; /* Размер иконки */
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
 }
+
+.starhit { background-image: url("/images/starhit.svg"); }
+.percent { background-image: url("images/percent.svg"); }
+.new { background-image: url("images/new.svg"); }
+.sausage { background-image: url("images/sausage.svg"); }
+.milk { background-image: url("images/milk.svg"); }
+.fish { background-image: url("images/fish.svg"); }
+.beer { background-image: url("images/beer.svg"); }
+.cold { background-image: url("images/cold.svg"); }
+.honey { background-image: url("images/honey.svg"); }
+.vegetables { background-image: url("images/vegetables.svg"); }
+.fruits { background-image: url("images/fruits.svg"); }
 
 .navcont-right{
     max-width: 100%;
@@ -789,15 +822,24 @@ input[type="checkbox"] {
     max-width: 285px;
     background-color: #EFF2F4;
     
-    
-
 }
+
 .greynav-p {
     font-size: 16px;
     font-weight: bold;
-    padding-top: 24px;
-    padding-left: 15px;
+    
 }
+.greynav-p2{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container-grey{
+    padding: 15px 17px;
+}
+
+
+
 
 .navtext-right{
     display: flex;
@@ -806,6 +848,20 @@ input[type="checkbox"] {
     padding-left: 0;
 
 }
+
+.priceblock{
+    display: flex;
+
+}
+.numbers{
+    width: 50%;
+    text-align: center;
+    color: grey;
+    border: 1px solid #EFF2F4;
+}
+
+
+
 .h-text{
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
