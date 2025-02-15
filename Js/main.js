@@ -45,7 +45,7 @@ Array.from(productCard).forEach(card => {
         priceInCart.innerHTML = +priceInCart.innerHTML + price
 
         console.log('Show');
-        
+
         setInterval(function () {
             console.log('Close!!!!');
         }, 3000)
@@ -53,13 +53,18 @@ Array.from(productCard).forEach(card => {
 });
 
 
-const btnShow = document.querySelector('.btn-show'); 
-const cards = document.querySelectorAll('.cardhome'); 
+const btnShow = document.querySelector('.btn-show');
+const cards = document.querySelectorAll('.cardhome');
 
-btnShow.addEventListener('click', function() {
-    cards.forEach(card => { 
+btnShow.addEventListener('click', function () {
+    cards.forEach(card => {
     });
-    btnShow.style.display = 'none'; 
-}); 
+    btnShow.style.display = 'none';
+});
 
 
+// Тренировка 
+
+let fruits = ["Яблоко", "Банан", "Апельсин", "Груша"];
+
+fruits.forEach(fruit => console.log(fruit));
