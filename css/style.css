@@ -14,6 +14,9 @@ body {
 .wraper .container {
     max-width: 1224px;
 }
+.hidden{
+    visibility: hidden;
+}
 
 .firstline {
     display: flex;
@@ -445,13 +448,62 @@ body {
     padding-top: 58px;
     padding-left: 27px
 }
-
-
 .popular-product .nav-tabs {
     justify-content: center;
 
 }
 
+.popular-product1 .nav-tabs1 {
+    justify-content: flex-start;
+
+}
+
+.responsive-delivery{
+    display: flex;
+    align-items: flex-start;
+    color: #111111;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 15px;
+    margin-bottom: 0px;
+}
+
+.text-delivery {
+    flex: 0 0 70%; 
+    max-width: 70%;
+}
+
+.text-delivery2 {
+    flex: 0 0 30%; 
+    max-width: 30%;
+}
+.deliv-text p, .deliv-deliv p, .deliv-text1 p {
+    margin-bottom: 0;
+}
+
+.deliv-text{
+    padding-bottom: 20px;
+}
+.deliv-text2 {
+    font-weight: bold;
+    color: #D5AF86;
+    padding-top: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.text-delivery, .text-delivery2 {
+    max-width: 595px;
+}
+
+.delivery-bold {
+    font-weight: bold;
+}
+
+.deliv-small {
+    font-size: 15px;
+    color: #717171;
+    margin-top: 0;
+}
 
 
 
@@ -653,7 +705,6 @@ input {
 .checkbox-group{
     display: flex;
     flex-direction: column;
-
 }
 
 .custom-checkbox{
@@ -804,7 +855,7 @@ input[type="checkbox"] {
     margin-right: 5px;
 }
 
-.starhit { background-image: url("../images/starhit.svg"); }
+/* .starhit { background-image: url("../images/starhit.svg"); }
 .percent { background-image: url("../images/percent.svg"); }
 .new { background-image: url("../images/new.svg"); }
 .sausage { background-image: url("../images/sausage.svg"); }
@@ -814,7 +865,7 @@ input[type="checkbox"] {
 .cold { background-image: url("../images/cold.svg"); }
 .honey { background-image: url("../images/honey.svg"); }
 .vegetables { background-image: url("../images/vegetables.svg"); }
-.fruits { background-image: url("../images/fruits.svg"); }
+.fruits { background-image: url("../images/fruits.svg"); } */
 
 .navcont-right{
     max-width: 100%;/
@@ -842,13 +893,45 @@ input[type="checkbox"] {
 .greynav-p2{
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
+    color: #111111;
+
 }
 
 .container-grey{
     padding: 15px 17px;
 }
 
+/* Чекбокс для фильтра */
+.checkbox-group2{
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+    border-radius: 0;
+ 
+}
+.check-item{
+    display: flex;
+}
 
+.text-checkbox{
+    padding-left: 10px;
+    font-size: 18px;
+    color: #717171;
+
+}
+.filter{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.filter p{
+    margin-bottom: 0px;
+    padding-left: 10px;
+    color: #717171;
+
+}
 
 
 .navtext-right{
@@ -856,8 +939,12 @@ input[type="checkbox"] {
     gap: 30px;
     font-size: 15px;
     padding-left: 0;
-
 }
+/* 
+Нужно убрать высоту
+.ul.navtext-right li{
+    margin-bottom: 0px !important;
+} */
 
 .priceblock{
     display: flex;
@@ -870,11 +957,12 @@ input[type="checkbox"] {
     border: 1px solid #EFF2F4;
 }
 
-
-
 .h-text{
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+    color: #0E2149;
+    padding-top: 5px;
+
 }
 .style-list{
     display: flex;
@@ -943,8 +1031,14 @@ input[type="checkbox"] {
     display: none;
 }
 
+.nav-1{
+    padding-top: 20px;
+}
 
 /* catalog сторінка 3 */
+.catalog-global{
+    display: flex;
+}
 .navcont-right2{
     max-width: 100%;/
     justify-content: flex-start;
@@ -952,8 +1046,39 @@ input[type="checkbox"] {
     padding-top: 30px;
     
 }
+
+.catalog-slider{
+    max-width: 100%;
+    margin: auto;
+}
+
+.slider-for img {
+    max-width: 480px;
+}
+
+.slider-nav {
+    display: flex; 
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+.slider-nav img {
+    width: 64px; 
+    height: auto;
+    cursor: pointer;
+}
+
+
 .catalog-photo{
     display: flex;
+}
+
+.catalog-text{
+    padding-left: 70px;
+
+}
+.catalog-t{
+    max-width: 400px;
 }
 
 .sousage-catalog{
@@ -964,13 +1089,27 @@ input[type="checkbox"] {
     align-items: center;
     list-style: none;
     max-width: 590px;
-    padding-left: 70px;
+    padding-left: 0px;
 
 }
+.nutrition li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #555;
+    line-height: 18px;
+}
+
+.nutrition span {
+    display: inline-block;
+    background-color: white;
+    position: relative;
+    bottom: -1px;
+    padding-right: 7px;
+}
+
 .arctic{
     font-size: 16px;
     color: grey;
-    padding-left: 70px;
     margin-bottom: 0px;
 }
 .arct-one{
@@ -982,13 +1121,12 @@ input[type="checkbox"] {
 
 .onestyle{
     font-size: 18px;
-    padding-left: 70px;
     color: black;
 }
 
 .block-price15{
     display: flex;
-    padding-right: 70px;
+    
 }
 
 
@@ -1026,7 +1164,6 @@ input[type="checkbox"] {
     color: white;
     padding: 2px 6px;
     font-weight: bold;
-    border-radius: 4px;
     font-size: 14px;
 }
 
@@ -1035,15 +1172,19 @@ input[type="checkbox"] {
     color: #333;
     background-color: #EFF2F4;
     padding: 2px 6px;
-    border-radius: 4px;
     white-space: nowrap; 
+}
+
+.eco-disc {
+    display: flex;
+    align-items: center;
+    gap: 0px;
 }
 
 .buybutton15 {
     display: flex;
     gap: 10px; 
     margin-top: 10px;
-    padding-left: 70px;
 }
 
 .bt15 {
@@ -1070,7 +1211,7 @@ input[type="checkbox"] {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 70px;
+    padding-left: 0px;
 }
 
 .textprice15 {
@@ -1108,8 +1249,20 @@ input[type="checkbox"] {
     min-width: 20px;
     text-align: center;
 }
+.recomend{
+    font-weight: bold;
+    color: #0E2149;
+    padding-top: 20px;
+    padding-bottom: 0;
 
-
+}
+.recomend-card{
+    display: flex;
+    padding-bottom: 20px;
+}
+.recomend-card .cardhome{
+    margin-top: 15px;
+}
 
 @media (max-width:990px) {
     .cardhome:not(:nth-child(-n+3)) {

@@ -55,16 +55,39 @@ Array.from(productCard).forEach(card => {
 
 const btnShow = document.querySelector('.btn-show');
 const cards = document.querySelectorAll('.cardhome');
-
-btnShow.addEventListener('click', function () {
+if (btnShow) {
+    console.log ('btn-show');
+    btnShow.addEventListener('click', function () {
     cards.forEach(card => {
     });
     btnShow.style.display = 'none';
 });
+}
 
 
-// Тренировка 
 
-let fruits = ["Яблоко", "Банан", "Апельсин", "Груша"];
+$('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav'
+  });
+  $('.slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true
+  });
+      
+  $('.slider-for, .slider-nav').on('afterChange', function(event, slick, currentSlide) {
+    $('.slick-slide').removeAttr('aria-hidden');
+});
 
-fruits.forEach(fruit => console.log(fruit));
+// // Тренировка 
+
+// let fruits = ["Яблоко", "Банан", "Апельсин", "Груша"];
+
+// fruits.forEach(fruit => console.log(fruit));
