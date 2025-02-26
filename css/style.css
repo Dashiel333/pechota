@@ -1217,7 +1217,6 @@ input[type="checkbox"] {
 .textprice15 {
     display: flex;
     align-items: center;
-    
     flex-wrap: nowrap;
 }
 
@@ -1268,4 +1267,16 @@ input[type="checkbox"] {
     .cardhome:not(:nth-child(-n+3)) {
         display: none;
 }
+}
+
+
+@media (max-width: 480px) {
+    .promote-product-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 10px;
+        flex: 0 0 auto; 
+    }
 }
