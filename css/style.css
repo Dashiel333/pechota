@@ -6,7 +6,6 @@
 
 body {
     font-family: 'Times New Roman', Times, serif;
-    font-family: Abhaya Libre;
     margin: 0;
     padding: 0;
 }
@@ -459,8 +458,7 @@ body {
 }
 
 .responsive-delivery{
-    display: flex;
-    align-items: flex-start;
+    display: flex;  
     color: #111111;
     font-family: 'Times New Roman', Times, serif;
     padding-top: 15px;
@@ -502,7 +500,7 @@ body {
 .deliv-small {
     font-size: 15px;
     color: #717171;
-    margin-top: 0;
+    margin-top: 5px;
 }
 
 
@@ -612,7 +610,7 @@ body {
     display: flex;
 }
 
-.bt1 {
+.bt1{
     background-color: #0E2149;
     color: white;
     border: none;
@@ -629,6 +627,7 @@ body {
     width: 118px;
     height: 46px;
 }
+
 
 .question-containt {
     display: flex;
@@ -670,10 +669,13 @@ body {
 .blue-containt {
     display: flex;
     gap: 11px;
+    max-width: 550px;
 }
 
 input {
     width: 100%;
+    height: 44px;
+    padding: 15px;
 } 
 
 .input-class {
@@ -687,6 +689,7 @@ input {
 
 .text-aria {
     width: 50%;
+    padding: 15px;
 }
 
 . {
@@ -774,17 +777,19 @@ input[type="checkbox"] {
     padding: 0;
     margin: 0;
 }
-.list1{
-    list-style: none;
-    padding: 0;
-    margin: 0;
 
-}
-.list-text{
-    text-decoration;
+.list-text {
     font-weight: bold;
     font-size: 18px;
     padding-top: 30px;
+}
+.list li a, .list-text a{
+    text-decoration: none; 
+    color: inherit; /* Наследовать цвет текста списка */
+}
+
+.list li a:hover, .list-text a:hover  {
+    text-decoration: underline; /* Добавить подчеркивание при наведении */
 }
 .footer-part{
     display: flex;
@@ -807,7 +812,6 @@ input[type="checkbox"] {
     margin: 0;
 }
 
-
 /* body */
 .two-containers{
     display: flex;
@@ -826,7 +830,6 @@ input[type="checkbox"] {
 .bothcontainer{
     display: flex;
 }
-
 
 .text-list {
     border: 1px solid #EFF2F4;
@@ -933,18 +936,13 @@ input[type="checkbox"] {
 
 }
 
-
 .navtext-right{
     display: flex;
     gap: 30px;
     font-size: 15px;
     padding-left: 0;
+    text-decoration: underline;
 }
-/* 
-Нужно убрать высоту
-.ul.navtext-right li{
-    margin-bottom: 0px !important;
-} */
 
 .priceblock{
     display: flex;
@@ -1068,11 +1066,6 @@ input[type="checkbox"] {
     cursor: pointer;
 }
 
-
-.catalog-photo{
-    display: flex;
-}
-
 .catalog-text{
     padding-left: 70px;
 
@@ -1107,10 +1100,21 @@ input[type="checkbox"] {
     padding-right: 7px;
 }
 
-.arctic{
-    font-size: 16px;
+.arctic {
+    font-size: 13px;
     color: grey;
     margin-bottom: 0px;
+}
+.arctic-black{
+    font-size: 13px;
+    color: #0E2149;
+    margin-bottom: 0px;
+}
+.arct-top{
+    font-size: 16px;
+    color: grey;
+    padding-left: 0px;
+     
 }
 .arct-one{
     font-size: 16px;
@@ -1125,33 +1129,25 @@ input[type="checkbox"] {
 }
 
 .block-price15{
+    display: flex;    
+}
+
+.textprice15 {
+    font-weight: bold;
+    font-size: 24px;
+    color: #0E2149;
+    margin: 0;
     display: flex;
-    
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 
-.textprice15 {
-    font-weight: bold;
-    font-size: 24px;
-    color: #0E2149;
-    margin: 0;
-}
-
-.textprice15 {
-    font-weight: bold;
-    font-size: 24px;
-    color: #0E2149;
-    margin: 0;
-}
-
-.textprice16 {
+.text15 {
     display: flex;
     align-items: center;
     gap: 5px; 
-    font-size: 16px;
-}
-
-.text15 {
+    font-size: 24px;
     color: #D5AF86;
     font-weight: bold;
     text-decoration: line-through;
@@ -1187,25 +1183,25 @@ input[type="checkbox"] {
     margin-top: 10px;
 }
 
-.bt15 {
-    background-color: #0E2149;
-    color: white;
-    border: none;
-    width: 150px;
-    height: 40px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.bt16 {
+.bt1-product, .bt2-product{
     background-color: #D5AF86;
     color: white;
+    margin-left: 9px;
     border: none;
-    width: 150px;
-    height: 40px;
-    font-size: 16px;
-    cursor: pointer;
+    width: 130px;
+    height: 46px;
 }
+.bt2-product{
+    background-color: #0E2149; 
+}
+
+/* Стили */
+.nav-link-btn{
+    border: 0,5px; 
+    background-color: #EFF2F4; 
+    padding: 8px 16px; 
+} 
+
 
 .block-price15 {
     display: flex;
@@ -1214,11 +1210,6 @@ input[type="checkbox"] {
     padding-left: 0px;
 }
 
-.textprice15 {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-}
 
 .buybutton15 {
     display: flex;
@@ -1269,14 +1260,34 @@ input[type="checkbox"] {
 }
 }
 
-
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     .promote-product-content {
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        overflow-x: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
         gap: 10px;
         flex: 0 0 auto; 
     }
+} */
+
+
+@media (min-width: 768px){
+    .carousel-product {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .carousel-product .product-item { /* Ваши карточки товаров */
+        width: 100%; /* Чтобы каждый элемент занял всю ширину */
+    }
+}
+
+@media (min-width: 1024px){
+
+}
+
+
+@media (min-width: 1280px){
+
 }
